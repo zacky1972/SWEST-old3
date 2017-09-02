@@ -39,6 +39,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-sass-official'
   gem 'rails-assets-eonasdan-bootstrap-datetimepicker'
 end
+gem 'rails-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
