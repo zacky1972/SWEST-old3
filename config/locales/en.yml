@@ -56,3 +56,8 @@ en:
       editing_slot: 'Editing slot'
     new:
       new_slot: 'New slot'
+    show:
+      notice: 'Slot was successfully created.'
+      name: 'Name'
+      from: 'From'
+      to: 'To'

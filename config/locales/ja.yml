@@ -56,3 +56,8 @@ ja:
       editing_slot: '時間帯編集'
     new:
       new_slot: '時間帯新規作成'
+    show:
+      notice: '新規作成しました'
+      name: '時間帯名称'
+      from: '開始時刻'
+      to: '終了時刻'

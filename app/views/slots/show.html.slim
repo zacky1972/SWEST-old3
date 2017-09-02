@@ -1,15 +1,15 @@
-p#notice = notice
+p#notice = t '.notice'
 
 p
-  strong Name:
+  strong = t '.name'
   = @slot.name
 p
-  strong From:
+  strong = t '.from'
   = @slot.from
 p
-  strong To:
+  strong = t '.to'
   = @slot.to
 
-= link_to 'Edit', edit_slot_path(@slot)
+= link_to t(:edit), edit_slot_path(@slot)
 '  |
-= link_to 'Back', slots_path
+= link_to t(:back), slots_path
