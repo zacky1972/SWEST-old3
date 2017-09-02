@@ -49,9 +49,10 @@ en:
       name: 'Name'
       from: 'From'
       to: 'To'
-      listing_slots: 'Listing Slots'
-      new_slot: 'New Slot'
+      listing_slots: 'Listing slots'
+      new_slot: 'New slot'
       are_you_sure?: 'Are you sure?'
     edit:
       editing_slot: 'Editing slot'
-  
+    new:
+      new_slot: 'New slot'
