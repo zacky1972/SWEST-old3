@@ -34,8 +34,11 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'slim-rails'
 gem 'jquery-rails'
-gem 'bootstrap-sass'
 gem 'simple_form'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap-sass-official'
+  gem 'rails-assets-eonasdan-bootstrap-datetimepicker'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

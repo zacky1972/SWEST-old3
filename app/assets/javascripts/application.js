@@ -14,5 +14,8 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
-//= require bootstrap-sprockets
+//= require bootstrap-sass-official
+//= require moment
+//= require moment/locale/ja
+//= require eonasdan-bootstrap-datetimepicker
 
