@@ -33,6 +33,7 @@ en:
   show: 'Show'
   edit: 'Edit'
   destroy: 'Destory'
+  back: 'Back'
 
   activerecord:
     models:
@@ -51,4 +52,6 @@ en:
       listing_slots: 'Listing Slots'
       new_slot: 'New Slot'
       are_you_sure?: 'Are you sure?'
+    edit:
+      editing_slot: 'Editing slot'
   
