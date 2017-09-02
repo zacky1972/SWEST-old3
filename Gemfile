@@ -35,10 +35,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'slim-rails'
 gem 'jquery-rails'
 gem 'simple_form'
-source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap-sass-official'
-  gem 'rails-assets-eonasdan-bootstrap-datetimepicker'
-end
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
 gem 'rails-i18n'
 
 group :development, :test do

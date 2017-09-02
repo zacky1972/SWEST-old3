@@ -12,10 +12,10 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
 //= require jquery
-//= require bootstrap-sass-official
+//= require bootstrap
+//= require bootstrap-sprockets
 //= require moment
-//= require moment/locale/ja
-//= require eonasdan-bootstrap-datetimepicker
-
+//= require moment/ja.js
+//= require bootstrap-datetimepicker
+//= require_tree .
