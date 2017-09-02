@@ -1,0 +1,25 @@
+h1 Listing slots
+
+table
+  thead
+    tr
+      th Name
+      th From
+      th To
+      th
+      th
+      th
+
+  tbody
+    - @slots.each do |slot|
+      tr
+        td = slot.name
+        td = slot.from
+        td = slot.to
+        td = link_to 'Show', slot
+        td = link_to 'Edit', edit_slot_path(slot)
+        td = link_to 'Destroy', slot, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Slot', new_slot_path

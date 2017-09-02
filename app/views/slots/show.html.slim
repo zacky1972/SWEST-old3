@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @slot.name
+p
+  strong From:
+  = @slot.from
+p
+  strong To:
+  = @slot.to
+
+= link_to 'Edit', edit_slot_path(@slot)
+'  |
+= link_to 'Back', slots_path
