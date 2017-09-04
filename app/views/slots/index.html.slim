@@ -2,22 +2,34 @@
   h1 = t '.listing_slots'
 
 .container
-  .row
+  .row.hidden-md.hidden-lg
     .col-xs-3 = t '.name'
     .col-xs-6
       = t '.from'
       br
       = t '.to'
     .col-xs-3
+  .row.hidden-xs.hidden-sm
+    .col-md-2 = t '.name' 
+    .col-md-4 = t '.from'
+    .col-md-4 = t '.to'
+    .col-md-2
   - @slots.each do |slot|
-    .row
+    .row.hidden-md.hidden-lg
       .col-xs-3 = slot.name
       .col-xs-6 = datetimeWrap slot.from
       .col-xs-3 = link_to t(:edit), edit_slot_path(slot), class: "btn btn-xs btn-default", :role => "button"
-    .row
+    .row.hidden-md.hidden-lg
       .col-xs-3
       .col-xs-6 = datetimeWrap slot.to
       .col-xs-3 = link_to t(:destroy), slot, data: { confirm: t('.are_you_sure?') }, method: :delete, class: "btn btn-xs btn-default", :role => "button"
+    .row.hidden-xs.hidden-sm
+      .col-xs-2 = slot.name
+      .col-xs-4 = datetimeWrap slot.from
+      .col-xs-4 = datetimeWrap slot.to
+      .col-xs-2
+        = link_to t(:edit), edit_slot_path(slot), class: "btn btn-sm btn-default", :role => "button"
+        = link_to t(:destroy), slot, data: { confirm: t('.are_you_sure?') }, method: :delete, class: "btn btn-sm btn-default", :role => "button"
 
 .container
   br
