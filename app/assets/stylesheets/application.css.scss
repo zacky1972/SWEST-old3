@@ -12,5 +12,15 @@
  *
  */
 
+@import "common";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.body {
+    color: $fg-color;
+    background-color: $bg-color;
+}
+
+.header {
+    background-color: $head-bg-color;
+}

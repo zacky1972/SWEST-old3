@@ -3,24 +3,24 @@
 
 .container
   .row.hidden-md.hidden-lg
-    .col-xs-3 = t '.name'
-    .col-xs-6
-      = t '.from'
-      br
-      = t '.to'
-    .col-xs-3
+      .col-xs-3.header = t '.name'
+      .col-xs-6.header
+        = t '.from'
+        br
+        = t '.to'
+      .col-xs-3.header
   .row.hidden-xs.hidden-sm
-    .col-md-2 = t '.name' 
-    .col-md-4 = t '.from'
-    .col-md-4 = t '.to'
-    .col-md-2
+    .col-md-2.header = t '.name' 
+    .col-md-4.header = t '.from'
+    .col-md-4.header = t '.to'
+    .col-md-2.header
   - @slots.each do |slot|
     .row.hidden-md.hidden-lg
       .col-xs-3 = slot.name
       .col-xs-6 = datetimeWrap slot.from
       .col-xs-3 = link_to t(:edit), edit_slot_path(slot), class: "btn btn-xs btn-default", :role => "button"
     .row.hidden-md.hidden-lg
-      .col-xs-3
+      .col-xs-3 = ' '
       .col-xs-6 = datetimeWrap slot.to
       .col-xs-3 = link_to t(:destroy), slot, data: { confirm: t('.are_you_sure?') }, method: :delete, class: "btn btn-xs btn-default", :role => "button"
     .row.hidden-xs.hidden-sm
