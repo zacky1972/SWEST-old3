@@ -4,11 +4,10 @@
 .container
   .row
     .col-xs-3 = t '.name'
-    .col-xs-6 = t '.from'
-    .col-xs-3
-  .row
-    .col-xs-3
-    .col-xs-6 = t '.to'
+    .col-xs-6
+      = t '.from'
+      br
+      = t '.to'
     .col-xs-3
   - @slots.each do |slot|
     .row
