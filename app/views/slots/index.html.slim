@@ -6,6 +6,7 @@
     .col-xs-3 = t '.name'
     .col-xs-6 = t '.from'
     .col-xs-3
+  .row
     .col-xs-3
     .col-xs-6 = t '.to'
     .col-xs-3
@@ -13,14 +14,10 @@
     .row
       .col-xs-3 = slot.name
       .col-xs-6 = datetimeWrap slot.from
-      .col-xs-3 = link_to t(:show), slot, class: "btn btn-xs btn-default", :role => "button"
-    .row
-      .col-xs-3
-      .col-xs-6 = datetimeWrap slot.to
       .col-xs-3 = link_to t(:edit), edit_slot_path(slot), class: "btn btn-xs btn-default", :role => "button"
     .row
       .col-xs-3
-      .col-xs-6
+      .col-xs-6 = datetimeWrap slot.to
       .col-xs-3 = link_to t(:destroy), slot, data: { confirm: t('.are_you_sure?') }, method: :delete, class: "btn btn-xs btn-default", :role => "button"
 
 .container
