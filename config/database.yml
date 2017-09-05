@@ -23,6 +23,7 @@ test:
 production:
   <<: *default
   adapter: postgresql  
-  encoding: utf8
+  encoding: unicode
+  timeout: 5000
   pool: 5
 
