@@ -35,6 +35,15 @@ ja:
   destroy: '削除'
   back: '戻る'
 
+  slot_create_success: '時間帯を新規作成しました'
+  slot_update_success: '時間帯を更新しました'
+  slot_destroy_success: '時間帯を削除しました'
+
+  select_import_csv_file: 'インポートするCSVファイルを選択してください'
+  slot_import_success: "%count 件の時間帯情報を追加 / 更新しました"
+  slot_import_success_plural: "%count 件の時間帯情報を追加 / 更新しました"
+
+
   activerecord:
     models:
       slot: '時間帯'
@@ -52,12 +61,13 @@ ja:
       listing_slots: '時間帯一覧'
       new_slot: '新規時間帯'
       are_you_sure?: '本当に削除しますか？'
+      csv_export: 'CSVエクスポート'
+      csv_import: 'CSVインポート'
     edit:
       editing_slot: '時間帯編集'
     new:
       new_slot: '時間帯新規作成'
     show:
-      notice: '新規作成しました'
       name: '時間帯名称'
       from: '開始時刻'
       to: '終了時刻'

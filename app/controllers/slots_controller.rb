@@ -28,7 +28,7 @@ class SlotsController < ApplicationController
 
     respond_to do |format|
       if @slot.save
-        format.html { redirect_to @slot, notice: 'Slot was successfully created.' }
+        format.html { redirect_to @slot, notice: :slot_create_success }
         format.json { render :show, status: :created, location: @slot }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class SlotsController < ApplicationController
   def update
     respond_to do |format|
       if @slot.update(slot_params)
-        format.html { redirect_to @slot, notice: 'Slot was successfully updated.' }
+        format.html { redirect_to @slot, notice: :slot_update_success }
         format.json { render :show, status: :ok, location: @slot }
       else
         format.html { render :edit }
@@ -56,8 +56,17 @@ class SlotsController < ApplicationController
   def destroy
     @slot.destroy
     respond_to do |format|
-      format.html { redirect_to slots_url, notice: 'Slot was successfully destroyed.' }
+      format.html { redirect_to slots_url, notice: :slot_destroy_success }
       format.json { head :no_content }
+    end
+  end
+
+  def import
+    if params[:csv_file].blank?
+      redirect_to(slots_url, alert: :select_import_csv_file)
+    else
+      count = Slot.import(params[:csv_file])
+      redirect_to(slots_url, notice: view_context.pluralize_sentence(count, "slot_import_success"))
     end
   end
 

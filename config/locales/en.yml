@@ -35,6 +35,14 @@ en:
   destroy: 'Destory'
   back: 'Back'
 
+  slot_create_success: 'Slot was successfully created.'
+  slot_update_success: 'Slot was successfully updated.'
+  slot_destroy_success: 'Slot was successfully destroyed.'
+
+  select_import_csv_file: 'select a csv file to import.'
+  slot_import_success: "A slot is added or updated successfully."
+  slot_import_success_plural: "%count slots are added or updated successfully."
+
   activerecord:
     models:
       slot: 'Slot'
@@ -52,12 +60,13 @@ en:
       listing_slots: 'Listing slots'
       new_slot: 'New slot'
       are_you_sure?: 'Are you sure?'
+      csv_export: 'Export CSV'
+      csv_import: 'Import CSV'
     edit:
       editing_slot: 'Editing slot'
     new:
       new_slot: 'New slot'
     show:
-      notice: 'Slot was successfully created.'
       name: 'Name'
       from: 'From'
       to: 'To'

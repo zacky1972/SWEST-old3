@@ -42,3 +42,10 @@
 .container
   br
   = link_to t('.new_slot'), new_slot_path, class: "btn btn-xs btn-default", :role => "button"
+  = link_to t('.csv_export'), slots_path(format: :csv), class: "btn btn-xs btn-success", :role => "button"
+  .panel.panel-default
+    .panel-body
+      = form_tag(import_slots_path, :method => :post, multipart: true) do
+        .form-group
+          = file_field_tag :csv_file
+        = submit_tag t('.csv_import'), :class => "btn btn-primary"
