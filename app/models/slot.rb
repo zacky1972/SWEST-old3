@@ -1,4 +1,17 @@
 class Slot < ApplicationRecord
+  
+  def <=> other
+    if from == other.from then
+      if to == other.to then
+        name <=> other.name
+      else
+        to <=> other.to
+      end
+    else
+      from <=> other.from
+    end
+  end
+  
    # CSVファイルの内容をDBに登録する
     def self.import(file)
 

@@ -17,7 +17,7 @@
         th.col-md-4.hidden-xs.hidden-sm = t '.to'
         th.col-md-2.hidden-xs.hidden-sm &nbsp;
     tbody
-      - @slots.each do |slot|
+      - @slots.sort.each do |slot|
         tr
           th.hidden-md.hidden-lg
             = slot.name
