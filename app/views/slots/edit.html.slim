@@ -1,8 +1,8 @@
-h1 = t '.editing_slot'
+.container
+  h1 = t '.editing_slot'
 
 == render 'form'
 
-= link_to t(:show), @slot
-'  |
-= link_to t(:back), slots_path
+.container
+  = link_to t(:back), slots_path
 

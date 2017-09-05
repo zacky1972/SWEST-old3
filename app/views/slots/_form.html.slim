@@ -1,8 +1,16 @@
-= simple_form_for @slot do |f|
-  = f.input :name
-  = f.input :from, as: :date_time_picker
-  = f.input :to, as: :date_time_picker
-  = f.button :submit
+.container
+  = simple_form_for @slot do |f|
+    .row
+      .col-xs-6
+        = f.input :name
+    .row
+      .col-xs-8.col-md-6
+        = f.input :from, as: :date_time_picker
+      .col-xs-8.col-md-6
+        = f.input :to, as: :date_time_picker
+    .row
+      .col-xs-4
+        = f.button :submit
 
 javascript:
   var init_datetimepciker;
