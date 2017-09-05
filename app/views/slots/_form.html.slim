@@ -13,6 +13,7 @@
         = f.button :submit, :class => 'btn-primary btn-xs'
 
 javascript:
+
   var init_datetimepciker;
   
   init_datetimepciker = function() {
@@ -29,4 +30,5 @@ javascript:
     return init_datetimepciker();
   });
   
-  $(document).on("ready page:load", init_datetimepciker());
+  $(document).on('ready page:load turbolinks:load', init_datetimepciker());
+  
