@@ -8,12 +8,12 @@
         = t '.from'
         br
         = t '.to'
-      .col-xs-3.header
+      .col-xs-3.header &nbsp;
   .row.hidden-xs.hidden-sm
     .col-md-2.header = t '.name' 
     .col-md-4.header = t '.from'
     .col-md-4.header = t '.to'
-    .col-md-2.header
+    .col-md-2.header &nbsp;
   - @slots.each do |slot|
     .row.hidden-md.hidden-lg
       .col-xs-3 = slot.name
