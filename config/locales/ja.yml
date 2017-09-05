@@ -35,9 +35,10 @@ ja:
   destroy: '削除'
   back: '戻る'
 
-  slot_create_success: '時間帯を新規作成しました'
-  slot_update_success: '時間帯を更新しました'
-  slot_destroy_success: '時間帯を削除しました'
+  slot_was_successfully_created: '時間帯を新規作成しました'
+  slot_was_successfully_updated: '時間帯を更新しました'
+  slot_was_successfully_destroyed: '時間帯を削除しました'
+
 
   select_import_csv_file: 'インポートするCSVファイルを選択してください'
   slot_import_success: "%count 件の時間帯情報を追加 / 更新しました"

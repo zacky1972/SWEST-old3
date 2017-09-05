@@ -35,9 +35,9 @@ en:
   destroy: 'Destory'
   back: 'Back'
 
-  slot_create_success: 'Slot was successfully created.'
-  slot_update_success: 'Slot was successfully updated.'
-  slot_destroy_success: 'Slot was successfully destroyed.'
+  slot_was_successfully_created: 'Slot was successfully created.'
+  slot_was_successfully_updated: 'Slot was successfully updated.'
+  slot_was_successfully_destroyed: 'Slot was successfully destroyed.'
 
   select_import_csv_file: 'select a csv file to import.'
   slot_import_success: "A slot is added or updated successfully."
