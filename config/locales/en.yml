@@ -51,6 +51,14 @@ en:
         name: 'Name'
         from: 'From'
         to: 'To'
+    errors:
+      models:
+        slot:
+          attributes:
+            from:
+              cannot_be_after_to: 'It cannot be after the end date.'
+            to:
+              cannot_be_before_from: 'It cannot be before the start date.'
 
   slots:
     index:

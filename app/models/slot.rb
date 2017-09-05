@@ -1,5 +1,18 @@
 class Slot < ApplicationRecord
   
+  validates :name, presence: true
+  
+  validates :from, presence: true
+  validates :to, presence: true
+  validate :from_cannot_be_after_to, if: -> { from.present? && to.present? }
+
+  def from_cannot_be_after_to
+    return if from <= to
+
+    errors.add(:from, :cannot_be_after_to)
+    errors.add(:to, :cannot_be_before_from)
+  end
+  
   def <=> other
     if from == other.from then
       if to == other.to then

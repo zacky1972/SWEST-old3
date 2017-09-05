@@ -51,14 +51,22 @@ ja:
     attributes:
       slot:
         name: '時間帯名称'
-        from: '開始時刻'
-        to: '終了時刻'
+        from: '開始日時'
+        to: '終了日時'
+    errors:
+      models:
+        slot:
+          attributes:
+            from:
+              cannot_be_after_to: '終了日時より後にはできません'
+            to:
+              cannot_be_before_from: '開始日時より前にはできません'
 
   slots:
     index:
       name: '時間帯名称'
-      from: '開始時刻'
-      to: '終了時刻'
+      from: '開始日時'
+      to: '終了日時'
       listing_slots: '時間帯一覧'
       new_slot: '新規時間帯'
       are_you_sure?: '本当に削除しますか？'
@@ -70,5 +78,5 @@ ja:
       new_slot: '時間帯新規作成'
     show:
       name: '時間帯名称'
-      from: '開始時刻'
-      to: '終了時刻'
+      from: '開始日時'
+      to: '終了日時'
