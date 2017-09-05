@@ -33,6 +33,7 @@ en:
   show: 'Show'
   edit: 'Edit'
   destroy: 'Destory'
+  destory_all: 'Delete All'
   back: 'Back'
 
   slot_was_successfully_created: 'Slot was successfully created.'

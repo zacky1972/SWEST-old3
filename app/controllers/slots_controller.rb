@@ -61,6 +61,11 @@ class SlotsController < ApplicationController
     end
   end
 
+  def destroy_all
+    Slot.destroy_all
+    redirect_to slots_url
+  end
+
   def import
     if params[:csv_file].blank?
       redirect_to(slots_url, alert: :select_import_csv_file)

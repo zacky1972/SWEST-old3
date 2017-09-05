@@ -33,6 +33,7 @@ ja:
   show: '閲覧'
   edit: '編集'
   destroy: '削除'
+  destory_all: '全削除'
   back: '戻る'
 
   slot_was_successfully_created: '時間帯を新規作成しました'
