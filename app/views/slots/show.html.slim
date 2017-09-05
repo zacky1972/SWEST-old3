@@ -1,15 +1,23 @@
-p#notice = t '.notice'
+.container
+  p#notice = t '.notice'
 
-p
-  strong = t '.name'
-  = @slot.name
-p
-  strong = t '.from'
-  = @slot.from
-p
-  strong = t '.to'
-  = @slot.to
+.container
+  .row
+    .col-xs-4.col-md-2
+      strong = t '.name'
+    .col-xs-8.col-md-10
+      = @slot.name
+  .row
+    .col-xs-4.col-md-2
+      strong = t '.from'
+    .col-xs-8.col-md-10
+      = datetimeWrap @slot.from
+  .row
+    .col-xs-4.col-md-2
+      strong = t '.to'
+    .col-xs-8.col-md-10
+      = datetimeWrap @slot.to
 
-= link_to t(:edit), edit_slot_path(@slot)
-'  |
-= link_to t(:back), slots_path
+.container
+  = link_to t(:edit), edit_slot_path(@slot), class: "btn btn-xs btn-default", :role => "button"
+  = link_to t(:back), slots_path, class: "btn btn-xs btn-default", :role => "button"
